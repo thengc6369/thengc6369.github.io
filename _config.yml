@@ -23,13 +23,12 @@ repository               : "thengc6369/thengc6369.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Márton Mester"
+  name             : "Márton Mester [ˈmaːrton ˈmɛʃtɛr]"
   pronouns         : # example: "he/him"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Planetary atmospheric scientist <br> marton.mester.16[at]alumni.ucl.ac.uk"
   location         : "Mountain View, CA"
   employer         : "NASA Ames Research Center"
   uri              : # URL
-  email            : "marton.mester.16@alumni.ucl.ac.uk" 
 
   # Academic websites
   academia         : # URL
