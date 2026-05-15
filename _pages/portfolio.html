@@ -4,6 +4,146 @@ title: "Portfolio"
 permalink: /portfolio/
 author_profile: true
 ---
+<div id="mars-clock" style="
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 14px;
+  max-width: 290px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+">
+  <div style="font-size: 1.1em; font-weight: 700;">Current Mars Date</div>
+  <div id="mars-year">Mars Year: ...</div>
+  <div id="mars-ls">Ls: ...</div>
+  <div id="mars-msd">Mars Sol Date: ...</div>
+  <div id="earth-utc" style="font-size: 0.85em; color: #666;"></div>
+</div>
+
+<script>
+function mod360(x) {
+  return ((x % 360) + 360) % 360;
+}
+
+function julianDateUTC(date) {
+  return date.getTime() / 86400000 + 2440587.5;
+}
+
+/*
+  TT - UTC = 69.184 s as of present-day dates:
+  TAI - UTC = 37 s, plus TT - TAI = 32.184 s.
+
+  If a new leap second is introduced in the future, this should be updated.
+*/
+function ttMinusUtcSeconds(date) {
+  return 69.184;
+}
+
+function marsLsAndMSD(date) {
+  const jdUTC = julianDateUTC(date);
+  const jdTT = jdUTC + ttMinusUtcSeconds(date) / 86400.0;
+  const d = jdTT - 2451545.0;
+
+  /*
+    NASA Mars24-style equations for Ls.
+    Reference:
+    https://www.giss.nasa.gov/tools/mars24/help/algorithm.html
+  */
+
+  const M = mod360(19.3871 + 0.52402073 * d);
+  const alphaFMS = mod360(270.3871 + 0.524038496 * d);
+
+  const pbs =
+    0.0071 * Math.cos((0.985626 * d / 2.2353 + 49.409) * Math.PI / 180) +
+    0.0057 * Math.cos((0.985626 * d / 2.7543 + 168.173) * Math.PI / 180) +
+    0.0039 * Math.cos((0.985626 * d / 1.1177 + 191.837) * Math.PI / 180) +
+    0.0037 * Math.cos((0.985626 * d / 15.7866 + 21.736) * Math.PI / 180) +
+    0.0021 * Math.cos((0.985626 * d / 2.1354 + 15.704) * Math.PI / 180) +
+    0.0020 * Math.cos((0.985626 * d / 2.4694 + 95.528) * Math.PI / 180) +
+    0.0018 * Math.cos((0.985626 * d / 32.8493 + 49.095) * Math.PI / 180);
+
+  const Mrad = M * Math.PI / 180;
+
+  const nuMinusM =
+    (10.691 + 3.0e-7 * d) * Math.sin(Mrad) +
+    0.623  * Math.sin(2 * Mrad) +
+    0.050  * Math.sin(3 * Mrad) +
+    0.005  * Math.sin(4 * Mrad) +
+    0.0005 * Math.sin(5 * Mrad) +
+    pbs;
+
+  const Ls = mod360(alphaFMS + nuMinusM);
+
+  /*
+    Mars Sol Date, following Mars24 convention.
+  */
+  const MSD =
+    ((jdTT - 2451549.5) / 1.0274912517) +
+    44796.0 -
+    0.0009626;
+
+  return { Ls, MSD };
+}
+
+/*
+  Mars Year is assigned from known Ls = 0 Mars New Year dates.
+
+  Recent and future Mars New Year dates:
+  MY 36: 2021-02-07
+  MY 37: 2022-12-26
+  MY 38: 2024-11-12
+  MY 39: 2026-09-30
+  MY 40: 2028-08-17
+  MY 41: 2030-07-05
+  MY 42: 2032-05-22
+
+  Sources for these boundaries include ESA and The Planetary Society.
+*/
+const marsYearBoundaries = [
+  { my: 36, start: Date.UTC(2021, 1, 7, 0, 0, 0) },
+  { my: 37, start: Date.UTC(2022, 11, 26, 0, 0, 0) },
+  { my: 38, start: Date.UTC(2024, 10, 12, 0, 0, 0) },
+  { my: 39, start: Date.UTC(2026, 8, 30, 0, 0, 0) },
+  { my: 40, start: Date.UTC(2028, 7, 17, 0, 0, 0) },
+  { my: 41, start: Date.UTC(2030, 6, 5, 0, 0, 0) },
+  { my: 42, start: Date.UTC(2032, 4, 22, 0, 0, 0) }
+];
+
+function marsYearFromDate(date) {
+  const t = date.getTime();
+  let currentMY = null;
+
+  for (const boundary of marsYearBoundaries) {
+    if (t >= boundary.start) {
+      currentMY = boundary.my;
+    } else {
+      break;
+    }
+  }
+
+  return currentMY;
+}
+
+function updateMarsClock() {
+  const now = new Date();
+  const { Ls, MSD } = marsLsAndMSD(now);
+  const MY = marsYearFromDate(now);
+
+  document.getElementById("mars-year").textContent =
+    MY === null ? "Mars Year: outside table range" : "Mars Year: " + MY;
+
+  document.getElementById("mars-ls").textContent =
+    "Ls: " + Ls.toFixed(3) + "°";
+
+  document.getElementById("mars-msd").textContent =
+    "Mars Sol Date: " + MSD.toFixed(5);
+
+  document.getElementById("earth-utc").textContent =
+    "Updated: " + now.toISOString().replace("T", " ").slice(0, 19) + " UTC";
+}
+
+updateMarsClock();
+setInterval(updateMarsClock, 1000);
+</script>
 
 {% include base_path %}
 
