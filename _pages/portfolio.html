@@ -15,7 +15,7 @@ author_profile: true
   <div style="font-size: 1.1em; font-weight: 700;">Current Mars Date</div>
   <div id="mars-year">Mars Year: ...</div>
   <div id="mars-ls">Ls: ...</div>
-  <div id="mars-msd">Mars Sol Date: ...</div>
+  <div id="mars-sol-year">Sol of Mars Year: ...</div>
   <div id="earth-utc" style="font-size: 0.85em; color: #666;"></div>
 </div>
 
@@ -29,10 +29,9 @@ function julianDateUTC(date) {
 }
 
 /*
-  TT - UTC = 69.184 s as of present-day dates:
+  TT - UTC = 69.184 s for current dates:
   TAI - UTC = 37 s, plus TT - TAI = 32.184 s.
-
-  If a new leap second is introduced in the future, this should be updated.
+  Update this if a future leap second changes TAI - UTC.
 */
 function ttMinusUtcSeconds(date) {
   return 69.184;
@@ -44,7 +43,7 @@ function marsLsAndMSD(date) {
   const d = jdTT - 2451545.0;
 
   /*
-    NASA Mars24-style equations for Ls.
+    NASA Mars24-style equations for Mars solar longitude Ls.
     Reference:
     https://www.giss.nasa.gov/tools/mars24/help/algorithm.html
   */
@@ -74,7 +73,8 @@ function marsLsAndMSD(date) {
   const Ls = mod360(alphaFMS + nuMinusM);
 
   /*
-    Mars Sol Date, following Mars24 convention.
+    Mars Sol Date, following the Mars24 convention.
+    This is used internally to calculate sol-of-year.
   */
   const MSD =
     ((jdTT - 2451549.5) / 1.0274912517) +
@@ -87,55 +87,82 @@ function marsLsAndMSD(date) {
 /*
   Mars Year is assigned from known Ls = 0 Mars New Year dates.
 
-  Recent and future Mars New Year dates:
-  MY 36: 2021-02-07
-  MY 37: 2022-12-26
-  MY 38: 2024-11-12
-  MY 39: 2026-09-30
-  MY 40: 2028-08-17
-  MY 41: 2030-07-05
-  MY 42: 2032-05-22
-
-  Sources for these boundaries include ESA and The Planetary Society.
+  Month numbers in JavaScript Date.UTC are zero-based:
+  1 = February, 10 = November, 11 = December, etc.
 */
 const marsYearBoundaries = [
-  { my: 36, start: Date.UTC(2021, 1, 7, 0, 0, 0) },
-  { my: 37, start: Date.UTC(2022, 11, 26, 0, 0, 0) },
-  { my: 38, start: Date.UTC(2024, 10, 12, 0, 0, 0) },
-  { my: 39, start: Date.UTC(2026, 8, 30, 0, 0, 0) },
-  { my: 40, start: Date.UTC(2028, 7, 17, 0, 0, 0) },
-  { my: 41, start: Date.UTC(2030, 6, 5, 0, 0, 0) },
-  { my: 42, start: Date.UTC(2032, 4, 22, 0, 0, 0) }
+  {
+    my: 36,
+    start: Date.UTC(2021, 1, 7, 0, 0, 0),
+    msd0: marsLsAndMSD(new Date(Date.UTC(2021, 1, 7, 0, 0, 0))).MSD
+  },
+  {
+    my: 37,
+    start: Date.UTC(2022, 11, 26, 0, 0, 0),
+    msd0: marsLsAndMSD(new Date(Date.UTC(2022, 11, 26, 0, 0, 0))).MSD
+  },
+  {
+    my: 38,
+    start: Date.UTC(2024, 10, 12, 0, 0, 0),
+    msd0: marsLsAndMSD(new Date(Date.UTC(2024, 10, 12, 0, 0, 0))).MSD
+  },
+  {
+    my: 39,
+    start: Date.UTC(2026, 8, 30, 0, 0, 0),
+    msd0: marsLsAndMSD(new Date(Date.UTC(2026, 8, 30, 0, 0, 0))).MSD
+  },
+  {
+    my: 40,
+    start: Date.UTC(2028, 7, 17, 0, 0, 0),
+    msd0: marsLsAndMSD(new Date(Date.UTC(2028, 7, 17, 0, 0, 0))).MSD
+  },
+  {
+    my: 41,
+    start: Date.UTC(2030, 6, 5, 0, 0, 0),
+    msd0: marsLsAndMSD(new Date(Date.UTC(2030, 6, 5, 0, 0, 0))).MSD
+  },
+  {
+    my: 42,
+    start: Date.UTC(2032, 4, 22, 0, 0, 0),
+    msd0: marsLsAndMSD(new Date(Date.UTC(2032, 4, 22, 0, 0, 0))).MSD
+  }
 ];
 
-function marsYearFromDate(date) {
+function marsYearInfoFromDate(date) {
   const t = date.getTime();
-  let currentMY = null;
+  let current = null;
 
   for (const boundary of marsYearBoundaries) {
     if (t >= boundary.start) {
-      currentMY = boundary.my;
+      current = boundary;
     } else {
       break;
     }
   }
 
-  return currentMY;
+  return current;
 }
 
 function updateMarsClock() {
   const now = new Date();
   const { Ls, MSD } = marsLsAndMSD(now);
-  const MY = marsYearFromDate(now);
+  const MYinfo = marsYearInfoFromDate(now);
 
   document.getElementById("mars-year").textContent =
-    MY === null ? "Mars Year: outside table range" : "Mars Year: " + MY;
+    MYinfo === null ? "Mars Year: outside table range" : "Mars Year: " + MYinfo.my;
 
   document.getElementById("mars-ls").textContent =
     "Ls: " + Ls.toFixed(3) + "°";
 
-  document.getElementById("mars-msd").textContent =
-    "Mars Sol Date: " + MSD.toFixed(5);
+  if (MYinfo === null) {
+    document.getElementById("mars-sol-year").textContent =
+      "Sol of Mars Year: outside table range";
+  } else {
+    const solOfYear = MSD - MYinfo.msd0;
+
+    document.getElementById("mars-sol-year").textContent =
+      "Sol of Mars Year: " + solOfYear.toFixed(2);
+  }
 
   document.getElementById("earth-utc").textContent =
     "Updated: " + now.toISOString().replace("T", " ").slice(0, 19) + " UTC";
