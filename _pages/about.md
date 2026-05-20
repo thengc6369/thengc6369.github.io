@@ -19,7 +19,7 @@ My studies so far has focussed on <br>
 &ndash; influence of topography on climate <br>
 &ndash; thermal tide reconstruction <br>
 
-
+<b>Methods</b> <br>
 My research makes use of a wide selection of numerical and analytical techniques, including: <br>
 &ndash; global climate model (GCM) and idealized general circulation model (IGCM) simulations <br>
 &ndash; empirical orthogonal function decomposition <br>
