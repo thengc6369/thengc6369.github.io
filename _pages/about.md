@@ -11,7 +11,7 @@ I have a Ph.D. in Applied Mathematics from University College London, BA and MMA
 My research so far has focussed on <br>
 <span style="color: blue;"> <b> Earth </b> </span>: <br>
 &ndash; stratospheric sudden warmings (SSWs) <br>
-<span style="color: orange;"> <b> Mars </b> </span>: <br>
+<span style="color: #b5521b;"> <b> Mars </b> </span>: <br>
 &ndash; midlatitude baroclinic waves <br>
 &ndash; tropical wave dynamics <br>
 &ndash; dust storms <br>
