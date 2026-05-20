@@ -25,8 +25,9 @@ My research makes use of a wide selection of numerical and analytical techniques
 &ndash; global climate model (GCM) and idealized general circulation model (IGCM) simulations <br>
 &ndash; empirical orthogonal function decomposition <br>
 &ndash; spectral analysis <br>
-&ndash; stochastic calculus <br>
-&ndash; variational data assimilation <br>
+&ndash; stochastic calculus, SDEs <br>
+&ndash; dynamical systems, ODEs <br>
+&ndash; variational data assimilation, optimization <br>
 &ndash; contour dynamics <br>
 
 <b>Technical skills and software experience</b>:<br>
