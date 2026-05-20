@@ -30,8 +30,19 @@ My research makes use of a wide selection of numerical and analytical techniques
 
 Technical skills and software experience:<br>
 Numerical models: <br>
-&ndash; Reading Intermediate General Circulation Model <br>
-&ndash; Isca <br>
-&ndash; NASA Ames Mars Global Climate Model <br>
+&ndash; Reading Intermediate General Circulation Model, Isca (<span style="color: blue;">Earth</span>)<br>
+&ndash; NASA Ames Mars Global Climate Model (<span style="color: #b5521b;">Mars</span>) <br>
+
+Reanalyses: <br>
+&ndash; ERA-Interim (<span style="color: blue;">Earth</span>) <br>
+&ndash; MACDA, OpenMARS, EMARS (<span style="color: #b5521b;">Mars</span>) <br>
+
+Programming languages: <br>
+&ndash; MATLAB, Fortran, Python <br>
+
+Other software: <br>
+&ndash; netCDF Operators (NCO) <br>
+
+
 
 
