@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 <script>
-window.open('/files/Mester_CV.pdf', '_blank');
+window.open('/files/cv_2.pdf', '_blank');
 window.location.href = '/';
 </script>
 
