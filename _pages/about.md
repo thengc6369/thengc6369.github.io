@@ -12,9 +12,12 @@ My research so far has focussed on <br>
 <span style="color: blue;"> <b> Earth </b> </span>: <br>
 &ndash; stratospheric sudden warmings (SSWs) <br>
 <span style="color: #b5521b;"> <b> Mars </b> </span>: <br>
+&ndash; regional dust storm formation <br>
+&ndash; aphelion cloud belt variability / tropical wave dynamics <br>
 &ndash; midlatitude baroclinic waves <br>
-&ndash; tropical wave dynamics <br>
-&ndash; dust storms <br>
+&ndash; polar vortex dynamics <br>
+&ndash; influence of topography on climate <br>
+
 
 My research makes use of a wide selection of numerical and analytical techniques, including: <br>
 &ndash; global climate model (GCM) and idealized general circulation model (IGCM) simulations <br>
