@@ -28,7 +28,7 @@ My research makes use of a wide selection of numerical and analytical techniques
 &ndash; variational data assimilation <br>
 &ndash; contour dynamics <br>
 
-Technical skills and software experience:<br>
+<b>Technical skills and software experience</b>:<br>
 Numerical models: <br>
 &ndash; Reading Intermediate General Circulation Model, Isca (<span style="color: blue;">Earth</span>)<br>
 &ndash; NASA Ames Mars Global Climate Model (<span style="color: #b5521b;">Mars</span>) <br>
