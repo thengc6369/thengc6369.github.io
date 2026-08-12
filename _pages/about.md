@@ -37,6 +37,7 @@ My research makes use of a wide selection of numerical and analytical techniques
 Numerical models: <br>
 &ndash; Reading Intermediate General Circulation Model, Isca (<span style="color: blue;">Earth</span>)<br>
 &ndash; NASA Ames Mars Global Climate Model (<span style="color: #b5521b;">Mars</span>) <br>
+&ndash; Flexible Particle Dispersion Model (FLEXPART) <br>
 
 Reanalyses: <br>
 &ndash; ERA-Interim (<span style="color: blue;">Earth</span>) <br>
@@ -48,7 +49,6 @@ Programming languages: <br>
 
 Other software: <br>
 &ndash; netCDF Operators (NCO), Contour-Advective Semi-Lagrangian (CASL)  <br>
-&ndash; FLEXPART <br>
 
 
 
