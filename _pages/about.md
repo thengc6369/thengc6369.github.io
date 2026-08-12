@@ -41,7 +41,7 @@ Numerical models: <br>
 Reanalyses: <br>
 &ndash; ERA-Interim (<span style="color: blue;">Earth</span>) <br>
 &ndash; MACDA, OpenMARS, EMARS (<span style="color: #b5521b;">Mars</span>) <br>
-&ndash; ALERA-V (<span style="color: brown;">Venus</span>) <br>
+&ndash; ALERA-V (<span style="color: #d9a441;">Venus</span>) <br>
 
 Programming languages: <br>
 &ndash; MATLAB, Fortran, Python <br>
