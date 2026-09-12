@@ -12,7 +12,7 @@ site_theme               : "air" # The available themes options are "default", "
 title                    : "Márton Mester"
 title_separator          : "-"
 name                     : &name "Márton Mester"
-description              : &description "Research on climate dynamics on Earth and Mars"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Research on climate dynamics on Earth, Mars and Venus"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : "https://thengc6369.github.io"
 baseurl                  : ""
 repository               : "thengc6369/thengc6369.github.io"
@@ -26,8 +26,8 @@ author:
   name             : "Márton Mester <br> [ˈmaːrton ˈmɛʃtɛr]"
   pronouns         : # example: "he/him"  
   bio              : "Planetary atmospheric scientist <br> marton.mester.16[at] <br> alumni.ucl.ac.uk"
-  location         : "Mountain View, CA"
-  employer         : "NASA Ames <br> Research Center"
+  location         : "Budapest, HU"
+  employer         : "HUN-REN ELTE <br> Theoretical Physics <br> Research Group"
   uri              : # URL
 
   # Academic websites
