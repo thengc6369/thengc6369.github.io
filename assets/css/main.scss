@@ -50,6 +50,11 @@
 
    /* Earth navigation item */
    .greedy-nav a[href$="/earth/"] {
-  color: #b5521b !important;
+  color: blue !important;
+   }
+
+   /* Venus navigation item */
+   .greedy-nav a[href$="/venus/"] {
+  color: #d9a441 !important;
    }
 
