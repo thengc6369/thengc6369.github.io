@@ -17,7 +17,7 @@ main:
   - title: "Talks"
     url: /talks/       
     
-  - title: "Mars"
+  - title: "<span style="color: #b5521b;"> <b> Mars</b></span>"
     url: /mars/
 
   - title: "Earth"
