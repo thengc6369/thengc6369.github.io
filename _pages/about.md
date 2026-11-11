@@ -26,9 +26,15 @@ My research spans atmospheric and climate dynamics on various planets in the sol
 
 <span style="color: #b5521b;"> <b> Mars</b></span>
 
+<span style="color: blue;"> <b> Earth</b></span>: <br>
+
+
+<span style="color: #b5521b;"> <b> Venus</b></span>
+
+
 
 studies so far has focussed on <br>
-<span style="color: blue;"> <b> Earth</b></span>: <br>
+
 &ndash; stratospheric sudden warmings (SSWs) <br>
 <span style="color: #b5521b;"> <b> Mars</b></span>: <br>
 &ndash; regional dust storm formation <br>
