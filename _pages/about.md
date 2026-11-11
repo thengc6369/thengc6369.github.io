@@ -12,10 +12,15 @@ I have a Ph.D. in Applied Mathematics from University College London, BA and MMa
 <br>
 
 <b>Positions</b> <br>
-2026 - Postdoctoral research associate, HUN-REN ELTE Theoretical Physics Research Group <br>
-<i> Atmospheric transport modelling on Venus </i>
-2024-2026 - NPP Research Fellow, NASA Ames Research Center <br>
-Project Title: <i> Influence of Mars' Topography on Traveling Weather Systems and Cross-Equatorial Dust Storms </i>
+2026 - Postdoctoral Research Associate, HUN-REN ELTE Theoretical Physics Research Group, Budapest, Hungary <br>
+<i> Atmospheric transport modelling on Venus </i> <br>
+2024-2026 - NPP Research Fellow, NASA Ames Research Center, Moffett Field, CA, USA <br>
+Project Title: <i> Influence of Mars' Topography on Traveling Weather Systems and Cross-Equatorial Dust Storms </i> <br>
+2021-2023 - Postdoctoral Research Fellow, Universidad Complutense de Madrid, Madrid, Spain <br>
+Project Title: <i> Dynamical forcing and triggering mechanisms of sudden stratospheric warmings </i> <br>
+
+
+
 
 <b>Research</b> <br>
 My studies so far has focussed on <br>
