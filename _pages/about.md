@@ -8,9 +8,6 @@ I am a planetary atmospheric scientist studying the climate of various planets, 
 
 Currently, I am a research associate at HUN-REN ELTE Theoretical Physics Research Group where in the majority of my time I am studying atmospheric transport on Venus.
 
-I have a Ph.D. in Applied Mathematics from University College London, BA and MMath degrees in Mathematics from the University of Cambridge. I have been appointed for two postdoctoral positions; I studied stratospheric polar vortices (SSWs) at Universidad Complutense de Madrid (UCM), and various components of Mars' climate at National Aeronautics and Space Administration (NASA). 
-<br>
-
 <b>Positions</b> <br>
 2026 - Postdoctoral Research Associate, HUN-REN ELTE Theoretical Physics Research Group, Budapest, Hungary <br>
 <i> Atmospheric transport modelling on Venus </i> <br>
@@ -61,8 +58,6 @@ Reanalyses: <br>
 Programming languages: <br>
 &ndash; MATLAB, Fortran, Python <br>
 
-Other software: <br>
-&ndash; netCDF Operators (NCO), Contour-Advective Semi-Lagrangian (CASL)  <br>
 
 
 
