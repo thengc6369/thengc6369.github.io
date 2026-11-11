@@ -4,7 +4,7 @@ title: "About"
 author_profile: true
 ---
 
-I am a planetary atmospheric scientist studying various climate phenomena on Earth, Mars, and Venus.
+I am a planetary atmospheric scientist studying the climate of various planets, including Earth, Mars, and Venus.
 
 Currently, I am a research associate at HUN-REN ELTE Theoretical Physics Research Group where in the majority of my time I am studying atmospheric transport on Venus.
 
@@ -18,6 +18,10 @@ I have a Ph.D. in Applied Mathematics from University College London, BA and MMa
 Project Title: <i> Influence of Mars' Topography on Traveling Weather Systems and Cross-Equatorial Dust Storms </i> <br>
 2021-2023 - Postdoctoral Research Fellow, Universidad Complutense de Madrid, Madrid, Spain <br>
 Project Title: <i> Dynamical forcing and triggering mechanisms of sudden stratospheric warmings </i> <br>
+2016-2021 - PhD, University College London, London, UK <br>
+Thesis: <i> Stochastic and Dynamical Models of Sudden Stratospheric Warmings </i> <br>
+
+
 
 
 
