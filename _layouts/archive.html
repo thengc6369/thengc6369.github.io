@@ -17,7 +17,17 @@ layout: default
 
   <div class="archive">
     {% unless page.header.overlay_color or page.header.overlay_image %}
-      <h1 class="page__title">{{ page.title }}</h1>
+      
+<h1 class="page__title"
+  {% if page.url == "/mars/" %}
+    style="color: #b5521b;"
+  {% elsif page.url == "/venus/" %}
+    style="color: #d9a441;"
+  {% elsif page.url == "/ssw/" %}
+    style="color: #0000ff;"
+  {% endif %}
+>{{ page.title }}</h1>
+
     {% endunless %}
     {{ content }}
   </div>
