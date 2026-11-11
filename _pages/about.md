@@ -24,12 +24,11 @@ Thesis: <i> Stochastic and Dynamical Models of Sudden Stratospheric Warmings </i
 <b>Research</b> <br>
 My research spans atmospheric and climate dynamics on various planets in the solar system. My investigations use a variety of techniques/sources, including global climate model (GCM) simulations, simplified (e.g., quasigeostrophic) models, and analysis of reanalysis and observational datasets.
 
-<span style="color: #b5521b;"> <b> Mars</b></span>
+<span style="color: #b5521b;"> <b> Mars</b></span>: <br>
 
 <span style="color: blue;"> <b> Earth</b></span>: <br>
 
-
-<span style="color: #b5521b;"> <b> Venus</b></span>
+<span style="color: #d9a441;"> <b> Venus</b></span>: <br>
 
 
 
