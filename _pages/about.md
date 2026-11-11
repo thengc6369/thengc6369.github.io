@@ -13,7 +13,9 @@ I have a Ph.D. in Applied Mathematics from University College London, BA and MMa
 
 <b>Positions</b> <br>
 2026 - Postdoctoral research associate, HUN-REN ELTE Theoretical Physics Research Group <br>
-
+<i> Atmospheric transport modelling on Venus </i>
+2024-2026 - NPP Research Fellow, NASA Ames Research Center <br>
+Project Title: <i> Influence of Mars' Topography on Traveling Weather Systems and Cross-Equatorial Dust Storms </i>
 
 <b>Research</b> <br>
 My studies so far has focussed on <br>
