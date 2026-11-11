@@ -22,6 +22,7 @@ Thesis: <i> Stochastic and Dynamical Models of Sudden Stratospheric Warmings </i
 2012-2016 - BA, MMath, University of Cambridge, Cambridge, UK <br>
 
 
+
 <b>Research</b> <br>
 My studies so far has focussed on <br>
 <span style="color: blue;"> <b> Earth</b></span>: <br>
