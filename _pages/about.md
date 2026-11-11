@@ -4,12 +4,16 @@ title: "About"
 author_profile: true
 ---
 
-I am a planetary atmospheric scientist studying various climate phenomena on Earth and Mars. 
+I am a planetary atmospheric scientist studying various climate phenomena on Earth, Mars, and Venus.
+
+Currently, I am a research associate at HUN-REN ELTE Theoretical Physics Research Group where in the majority of my time I am studying atmospheric transport on Venus.
 
 I have a Ph.D. in Applied Mathematics from University College London, BA and MMath degrees in Mathematics from the University of Cambridge. I have been appointed for two postdoctoral positions; I studied stratospheric polar vortices (SSWs) at Universidad Complutense de Madrid (UCM), and various components of Mars' climate at National Aeronautics and Space Administration (NASA). 
 <br>
 
-Currently, I am a research associate at HUN-REN ELTE Theoretical Physics Research Group where I will contribute to several lines of research, including 1) optimization tasks in parallel climate ensemble analysis, 2) Martian tropical cloud belt variability, 3) atmospheric transport on Venus.
+<b>Positions</b> <br>
+2026 - Postdoctoral research associate, HUN-REN ELTE Theoretical Physics Research Group <br>
+
 
 <b>Research</b> <br>
 My studies so far has focussed on <br>
