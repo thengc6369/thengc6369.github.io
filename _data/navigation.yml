@@ -20,6 +20,9 @@ main:
   - title: "Mars"
     url: /mars/
 
+  - title: "Venus"
+    url: /venus/
+
   - title: "Earth"
     url: /ssw/
     
