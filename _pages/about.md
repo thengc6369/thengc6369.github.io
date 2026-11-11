@@ -26,16 +26,7 @@ My research spans atmospheric and climate dynamics on various planets in the sol
 
 <span style="color: #b5521b;"> <b> Mars</b></span>: <br>
 
-<span style="color: blue;"> <b> Earth</b></span>: <br>
 
-<span style="color: #d9a441;"> <b> Venus</b></span>: <br>
-
-
-
-studies so far has focussed on <br>
-
-&ndash; stratospheric sudden warmings (SSWs) <br>
-<span style="color: #b5521b;"> <b> Mars</b></span>: <br>
 &ndash; regional dust storm formation <br>
 &ndash; aphelion cloud belt variability / tropical wave dynamics <br>
 &ndash; midlatitude baroclinic waves <br>
@@ -43,29 +34,15 @@ studies so far has focussed on <br>
 &ndash; influence of topography on climate <br>
 &ndash; thermal tide reconstruction <br>
 
-<b>Methods</b> <br>
-My research makes use of a wide selection of numerical and analytical techniques, including: <br>
-&ndash; global climate model (GCM) and idealized general circulation model (IGCM) simulations <br>
-&ndash; empirical orthogonal function decomposition <br>
-&ndash; spectral analysis <br>
-&ndash; stochastic calculus, SDEs <br>
-&ndash; dynamical systems, ODEs <br>
-&ndash; variational data assimilation, optimization <br>
-&ndash; contour dynamics <br>
+<span style="color: #d9a441;"> <b> Venus</b></span>: <br>
 
-<b>Technical skills and software experience</b>:<br>
-Numerical models: <br>
-&ndash; Reading Intermediate General Circulation Model, Isca (<span style="color: blue;">Earth</span>)<br>
-&ndash; NASA Ames Mars Global Climate Model (<span style="color: #b5521b;">Mars</span>) <br>
-&ndash; Flexible Particle Dispersion Model (FLEXPART) <br>
 
-Reanalyses: <br>
-&ndash; ERA-Interim (<span style="color: blue;">Earth</span>) <br>
-&ndash; MACDA, OpenMARS, EMARS (<span style="color: #b5521b;">Mars</span>) <br>
-&ndash; ALERA-V (<span style="color: #d9a441;">Venus</span>) <br>
+&ndash; atmospheric transport <br>
 
-Programming languages: <br>
-&ndash; MATLAB, Fortran, Python <br>
+<span style="color: blue;"> <b> Earth</b></span>: <br>
+
+&ndash; stratospheric sudden warmings (SSWs) <br>
+
 
 
 
