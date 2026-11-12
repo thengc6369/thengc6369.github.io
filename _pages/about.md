@@ -26,7 +26,6 @@ My research spans atmospheric and climate dynamics on various planets in the sol
 
 <span style="color: #b5521b;"> <b> Mars</b></span>: <br>
 
-
 &ndash; regional dust storm formation <br>
 &ndash; aphelion cloud belt variability / tropical wave dynamics <br>
 &ndash; midlatitude baroclinic waves <br>
@@ -36,8 +35,7 @@ My research spans atmospheric and climate dynamics on various planets in the sol
 
 <span style="color: #d9a441;"> <b> Venus</b></span>: <br>
 
-
-&ndash; atmospheric transport <br>
+&ndash; Lagrangian atmospheric transport <br>
 
 <span style="color: blue;"> <b> Earth</b></span>: <br>
 
