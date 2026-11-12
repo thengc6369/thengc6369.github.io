@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About"
+title: "Márton Mester"
 author_profile: true
 ---
 
