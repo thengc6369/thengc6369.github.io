@@ -22,7 +22,7 @@ Thesis: <i> Stochastic and Dynamical Models of Sudden Stratospheric Warmings </i
 2012-2016 - BA, MMath, University of Cambridge, Cambridge, UK <br>
 
 <b>Research</b> <br>
-My research spans atmospheric and climate dynamics on various planets in the solar system. My investigations use a variety of techniques/sources, including global climate model (GCM) simulations, simplified (e.g., quasigeostrophic) models, and analysis of reanalysis and observational datasets.
+My research spans atmospheric and climate dynamics on various planets in the solar system. My investigations use a variety of techniques/sources, including global climate model (GCM) simulations, simplified (e.g., quasigeostrophic) models, and analysis of reanalysis and observational datasets. Please find below a brief list of past and current interests; more details are provided in the respective menu page.
 
 <span style="color: #b5521b;"> <b> Mars</b></span>: <br>
 
