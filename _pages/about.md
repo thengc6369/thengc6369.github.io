@@ -4,12 +4,12 @@ title: "About"
 author_profile: true
 ---
 
-I am a planetary atmospheric scientist studying the climate of various planets, including Earth, Mars, and Venus.
+I am a planetary atmospheric scientist studying the climate and atmospheric dynamics of various planets, including Earth, Mars, and Venus.
 
-Currently, I am a research associate at HUN-REN ELTE Theoretical Physics Research Group where in the majority of my time I am studying atmospheric transport on Venus.
+Currently, I am a Research Associate at the HUN-REN ELTE Theoretical Physics Research Group, where my work primarily focuses on atmospheric transport on Venus.
 
 <b>Positions</b> <br>
-2026 - Postdoctoral Research Associate, HUN-REN ELTE Theoretical Physics Research Group, Budapest, Hungary <br>
+2026-present - Postdoctoral Research Associate, HUN-REN ELTE Theoretical Physics Research Group, Budapest, Hungary <br>
 <i> Atmospheric transport modelling on Venus </i> <br>
 2024-2026 - NPP Research Fellow, NASA Ames Research Center, Moffett Field, CA, USA <br>
 Project Title: <i> Influence of Mars' Topography on Traveling Weather Systems and Cross-Equatorial Dust Storms </i> <br>
@@ -22,7 +22,7 @@ Thesis: <i> Stochastic and Dynamical Models of Sudden Stratospheric Warmings </i
 2012-2016 - BA, MMath, University of Cambridge, Cambridge, UK <br>
 
 <b>Research</b> <br>
-My research spans atmospheric and climate dynamics on various planets in the solar system. My investigations use a variety of techniques/sources, including global climate model (GCM) simulations, simplified (e.g., quasigeostrophic) models, and analysis of reanalysis and observational datasets. Please find below a brief list of past and current interests; more details are provided in the respective menu page.
+My research spans atmospheric and climate dynamics on various planets in the Solar System. I investigate these using a range of approaches, including global climate model (GCM) simulations, simplified dynamical (e.g., quasigeostrophic) models, and analysis of reanalysis and observational datasets. Please find below a brief list of past and current interests; more details are provided in the respective menu page.
 
 <span style="color: #b5521b;"> <b> Mars</b></span>: <br>
 
