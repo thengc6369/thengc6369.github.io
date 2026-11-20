@@ -1,6 +1,6 @@
 /*
  * MDGM -> ACB-index, running entirely in the browser.
- * Version 4: batch processing of 1-20 MDGMs, optional Ls labels,
+ * Version 4: batch processing of 1-50 MDGMs, optional Ls labels,
  * consecutive-point connections, and optional five-image causal mean.
  * Interpolate the original 3600 x 1801 MDGM onto the NATIVE
  * 144 x 120 (usually) reference grid, then project onto two compressed
@@ -23,7 +23,7 @@
   const tableBody = el('acb-results-rows');
   const modeInputs = Array.from(root.querySelectorAll('input[name="acb-label-mode"]'));
   const filterInputs = Array.from(root.querySelectorAll('input[name="acb-filter-mode"]'));
-  const MAX_IMAGES = 20;
+  const MAX_IMAGES = 50;
   const base = (() => {
     // Jekyll baseurl is passed through the script src, so this also works
     // if the website later moves to a GitHub Pages project subpath.
@@ -228,7 +228,7 @@
   }
 
   // A batch is displayed in the order in which the browser supplies the files.
-  // The file selection is capped at 20; images are decoded one at a time.
+  // The file selection is capped at 50; images are decoded one at a time.
   const lsValues = [];
   const selectedMode = () => root.querySelector('input[name="acb-label-mode"]:checked').value;
   const selectedFilter = () => root.querySelector('input[name="acb-filter-mode"]:checked').value;
@@ -451,7 +451,7 @@
     } else if (selectedFiles.length) {
       say(`Selected ${selectedFiles.length} image(s). Choose the point labels and click Calculate ACB-index.`);
     } else {
-      say('Select 1–20 MDGM PNG files to begin.');
+      say('Select 1–50 MDGM PNG files to begin.');
     }
   });
 
@@ -459,7 +459,7 @@
     radio.addEventListener('change', () => {
       renderSelectedFiles(); // Retains any Ls values already entered.
       invalidate();
-      say(selectedFiles.length ? 'Point-label option changed. Calculate to update the diagram.' : 'Select 1–20 MDGM PNG files to begin.');
+      say(selectedFiles.length ? 'Point-label option changed. Calculate to update the diagram.' : 'Select 1–50 MDGM PNG files to begin.');
     });
   }
 
