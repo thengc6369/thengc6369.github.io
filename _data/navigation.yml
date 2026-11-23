@@ -17,8 +17,21 @@ main:
   - title: "Talks"
     url: /talks/       
     
+ 
   - title: "Mars"
     url: /mars/
+    children:
+      - title: "Regional dust storms"
+        url: /mars/dust-storms/
+      - title: "ACB-index"
+        url: /mars/acb-index/
+      - title: "Baroclinic waves"
+        url: /mars/baroclinic-waves/
+      - title: "Tides"
+        url: /mars/tides/
+      - title: "Mars Clock"
+        url: /mars/clock/
+
 
   - title: "Venus"
     url: /venus/
