@@ -27,6 +27,8 @@ main:
         url: /mars/acb-index/
       - title: "Baroclinic waves"
         url: /mars/baroclinic-waves/
+      - title: "Polar vortex"
+        url: /mars/polar-vortex/
       - title: "Tides"
         url: /mars/tides/
       - title: "Mars Clock"
