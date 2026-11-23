@@ -3,3 +3,51 @@
 {% include analytics.html %}
 
 {% include comments-providers/scripts.html %}
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const hover = window.matchMedia(
+    "(hover: hover) and (pointer: fine)"
+  );
+
+  const menus = Array.from(
+    document.querySelectorAll("#site-nav .has-submenu")
+  );
+
+  menus.forEach(menu => {
+    const details = menu.querySelector("details");
+
+    menu.addEventListener("mouseenter", () => {
+      if (hover.matches &&
+          menu.parentElement.classList.contains("visible-links")) {
+        menus.forEach(m => {
+          if (m !== menu) m.querySelector("details").open = false;
+        });
+        details.open = true;
+      }
+    });
+
+    menu.addEventListener("mouseleave", () => {
+      if (hover.matches &&
+          menu.parentElement.classList.contains("visible-links")) {
+        details.open = false;
+      }
+    });
+  });
+
+  document.addEventListener("click", event => {
+    if (!event.target.closest("#site-nav .has-submenu")) {
+      menus.forEach(m => m.querySelector("details").open = false);
+    }
+  });
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+      const opened = menus.find(m => m.querySelector("details").open);
+      menus.forEach(m => m.querySelector("details").open = false);
+      if (opened) opened.querySelector("summary").focus();
+    }
+  });
+});
+</script>
